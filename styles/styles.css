@@ -40,6 +40,10 @@ p{
     line-height:1.5em;
 }
 
+a{
+    color: #FFF;
+}
+
 .slider-content p{
     color: rgb(0, 0, 0);
     font-size:2rem;
@@ -213,8 +217,4 @@ header{
 
 .header-menu li a:hover{
     background-color: #f2f2f2;
-}
-
-a{
-    color: #FFF;
 }
