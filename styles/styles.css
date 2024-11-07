@@ -214,14 +214,3 @@ header{
 .header-menu li a:hover{
     background-color: #f2f2f2;
 }
-
-.value text-link{
-    color:#fff;
-}
-
-a:link {
-    color:#000;
-}
-a:visited {
-    color:#000;
-}
