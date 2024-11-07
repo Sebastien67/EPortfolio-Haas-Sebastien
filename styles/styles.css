@@ -54,6 +54,13 @@ a{
     padding: 100px 0;
 }
 
+.img-cv{
+    border-radius:15px;
+    padding: 20px;
+    box-sizing:border-box;
+
+}
+
 .boxed{
     max-width:1280px;
     margin-inline:auto;
