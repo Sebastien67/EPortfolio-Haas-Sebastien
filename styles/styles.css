@@ -1,8 +1,12 @@
 *{
     margin:0;
     padding:0;
-    color:#fff;
 }
+
+.value text-link{
+    textcolor:#fff;
+}
+
 
 .slider{
     width:100%;
