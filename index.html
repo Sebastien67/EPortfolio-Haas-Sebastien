@@ -1,153 +1,234 @@
 <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-                <title>Mon portfolio</title>
-            <meta type="description" content="Mon portfolio étudiant">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <link rel="stylesheet" href="styles/styles.css" type="text/css">
-        </head>
-    <body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mon portfolio étudiant">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio - Sébastien HAAS</title>
 
-        <header>
-            <div class="boxed">
-                <div class="flex aligncenter space-between">
-                    <a href="/" class="header-logo">
-                        <img src="img/placeholder.png">
-                    </a>
-                    <ul class="header-menu">
-                        <li><a href="#s1">Accueil</a></li>
-                        <li><a href="#s2">À propos de moi</a></li>
-                        <li><a href="#s3">Compétences</a></li>
-                        <li><a href="#s4">Réalisations</a></li>
-                        <li><a href="#s5">Contactez-moi</a></li>
-                    </ul>
-        </header>
+    <!-- Icônes et police -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
-        <div class="slider" id="s1">
-            <img src="img/fond-1.jpg" class="slider-background">
-                <div class="slider-content">
-                    <h1>Sébastien HAAS</h1>
-                    <p>Etudiant au Lycée René Cassin à Strasbourg</p>
-                </div>
+    <!-- Feuille de style -->
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+  </head>
+
+  <body>
+    <script src="scripts/scripts.js"></script>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <div class="boxed">
+        <div class="flex aligncenter space-between">
+          <a href="#" class="header-logo">
+            <img src="img/placeholder.png" alt="Logo du site">
+          </a>
+          <ul class="header-menu">
+            <li><a href="#s1">Accueil</a></li>
+            <li><a href="#s2">À propos de moi</a></li>
+            <li><a href="#s3">Compétences</a></li>
+            <li><a href="#s4">Réalisations</a></li>
+            <li><a href="#s5">Veille technologique</a></li>
+            <li><a href="#s6">Contact</a></li>
+          </ul>
         </div>
+      </div>
+    </header>
 
-        <div class="section " id="s2">
-            <div class="boxed">
-                <div class="flex">
-                    <div class="w40">
-                        <h2>À propos de moi</h2>
-                    </div>
-                    <div class="w60">
-                    <p>Je m'appelle Sébastien HAAS, je suis élève au lycée René Cassin à Strasbourg, j'ai fait un bac pro système informatique (SN) option réseaux informatiques et systèmes communiquants (RISC).
-                    Je suis en train d'effectuer un BTS en informatique nommé service informatique aux organisations (SIO).</p>
-                    <br>
-                        <div class="boxed text-center">
-                            <div class="img-cv w50">
-                                <h3>CV et lettre de motivation</h3>
-                                <a href="HAAS Sebastien - CV et lettre de motivation.pdf">
-                                <img src="img/img-logo-doc.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- ===== SLIDER ===== -->
+    <div class="slider dark" id="s1">
+      <img src="img/fond-1.jpg" class="slider-background" alt="Image de fond">
+      <div class="slider-content">
+        <h1>Sébastien HAAS</h1>
+        <p>Étudiant au Lycée René Cassin à Strasbourg</p>
+      </div>
+    </div>
+
+    <!-- ===== À PROPOS ===== -->
+    <section class="section" id="s2">
+      <div class="boxed flex wrap">
+        <div class="w40">
+          <h2>À propos de moi</h2>
+        </div>
+        <div class="w60">
+          <p>Je m'appelle <strong>Sébastien HAAS</strong>, je suis élève au lycée René Cassin à Strasbourg. 
+            J’ai obtenu un bac professionnel en systèmes numériques (option RISC) 
+            et je poursuis actuellement un <strong>BTS SIO (Services Informatiques aux Organisations)</strong>.
+          </p>
+          <div class="boxed text-center">
+            <div class="img-cv w50">
+              <h3>Mon CV</h3>
+              <a href="HAAS Sebastien - CV et lettre de motivation.pdf" target="_blank">
+                <img src="img/img-logo-doc.jpg" alt="Icône CV">
+              </a>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="section dark" id="s3">
-            <div class="boxed text-center">
-                <h2>Compétences :</h2>
-                <div class="flex gap30">
-                    <div class="w50 skill">
-                        <img src="img/python-logo.png">
-                        <h3>Python - Niveau débutant</h3>
-                    </div>
-                    <div class="w50 skill">
-                        <img src="img/HTML5.jpg">
-                        <h3>HTML5 - Niveau débutant</h3>
-                    </div>
-                    <div class="w50 skill">
-                        <img src="img/Logo-reseau.png">
-                        <h3>Réseaux Informatique - Niveau débutant</h3>
-                    </div>
-                </div>
-            </div>
+    <!-- ===== COMPÉTENCES ===== -->
+    <section class="section dark" id="s3">
+      <div class="boxed text-center">
+        <h2>Compétences</h2>
+        <div class="flex wrap gap30">
+          <div class="w30 skill">
+            <img src="img/python-logo.png" alt="Logo Python">
+            <h3>Python - Niveau débutant</h3>
+          </div>
+          <div class="w30 skill">
+            <img src="img/HTML5.jpg" alt="Logo HTML5">
+            <h3>HTML5 - Niveau débutant</h3>
+          </div>
+          <div class="w30 skill">
+            <img src="img/Logo-reseau.png" alt="Logo Réseaux">
+            <h3>Réseaux informatiques - Niveau débutant</h3>
+          </div>
         </div>
+      </div>
+      <div class="boxed text-center">
+        <div class="flex wrap gap30">
+          <div class="w30 skill">
+            <img src="img/---" alt="Logo Java script">
+            <h3>Java script - niveau intermédiaire</h3>
+          </div>
+          <div class="w30 skill">
+            <img src="img/---" alt="Logo Java">
+            <h3>Java - niveau débutant</h3>
+          </div>
+          <div class="w30 skill">
+            <img src="img/---" alt="Logo PHP">
+            <h3>Réseaux informatiques - Niveau débutant</h3>
+          </div>
 
-        <div class="section" id="s4">
-            <div class="boxed text-center">
-                <h2>Mes projets et réalisations de stages</h2>
-                <div class="flex wrap space-between">
-                    <div class="w32 realisation">
-                        <a href="index-st1.html">
-                            <img src="img/placeholdertest.jpg">
-                            <h3>Codage Raspberry - Stage</h3>
-                        </a>
-                    </div>
-                    <div class="w32 realisation">
-                        <a href="index-st2.html">
-                            <img src="img/placeholdertest.jpg">
-                            <h3>Codage Site WEB - Stage</h3>
-                        </a>
-                    </div>
-                    <div class="w32 realisation">
-                        <a href="index-st3.html">
-                            <img src="img/placeholdertest.jpg">                            
-                            <h3>Projet en entreprise - Stage</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
+      </div>
 
-        <div class="section " id="s6">
-            <div class="boxed">
-                <div class="flex">
-                    <div class="w40">
-                        <h2>Section nouvelle technologie.</h2>
-                        </div>
-                        <div class="w60">
-                        <p>[Lien + texte]</p>
-                        <br>
-                        </div>
-                    </div>
-                    <div class="w40">
-                        <h2>Les métiers de l'informatique</h2>
-                        </div>
-                        <div class="w60">
-                        <p>[Lien + texte]</p>
-                        <br>
-                        </div>
-                    </div>
+    </section>
 
-                </div>
-            </div>
+<!-- ===== RÉALISATIONS ===== -->
+<section class="section" id="s4">
+  <div class="boxed text-center">
+    <h2>Mes projets et réalisations</h2>
+
+    <!-- Menu filtre -->
+    <div class="filter-menu flex text-center gap30" style="justify-content:center;margin-bottom:30px;">
+      <button class="filter-btn active" data-filter="Réalisation">Réalisation</button>
+      <button class="filter-btn" data-filter="Stage">Stage</button>
+      <button class="filter-btn" data-filter="projet">Projet</button>
+      <button class="filter-btn" data-filter="Certification">Certification</button>
+    </div>
+
+    <!-- Sous-menu Stage -->
+    <div class="sous-menu-stage" style="display:none;">
+      <button class="filter-btn" data-filter="stage-1A">1ère année</button>
+      <button class="filter-btn" data-filter="stage-2A">2ème année</button>
+    </div>
+
+    <div class="flex wrap space-between gap30" id="projets-container">
+      <!-- Réalisation -->
+      <div class="w30 realisation" data-category="Réalisation">
+        <a href="Projets/index-st1.html">
+          <img src="img/placeholdertest.jpg" alt="Stage - Raspberry">
+          <h3>Stage Bac Pro - Code Raspberry</h3>
+        </a>
+      </div>
+      <div class="w30 realisation" data-category="Réalisation">
+        <a href="Projets/index-st2.html">
+          <img src="img/placeholdertest.jpg" alt="Stage - Web">
+          <h3>Stage Bac Pro - Site Web</h3>
+        </a>
+      </div>
+
+      <!-- === Stages 1ère année === -->
+      <div class="w30 realisation" data-category="stage-1A">
+        <a href="Projets/index-st1.html">
+          <img src="img/placeholdertest.jpg" alt="scripts - Powershell">
+          <h3>Projet Porwershell</h3>
+        </a>
+      </div>
+
+      <!-- === Stages 2ème année === -->
+      <div class="w30 realisation" data-category="stage-2A">
+        <a href="Projets/index-st3.html">
+          <img src="img/placeholdertest.jpg" alt="-">
+          <h3>-</h3>
+        </a>
+      </div>
+
+      <!-- Projet -->
+      <div class="w30 realisation" data-category="projet">
+        <a href="Projets/index-Projet1.html">
+          <img src="img/placeholdertest.jpg" alt="Projet 1">
+          <h3>Projet 1</h3>
+        </a>
+      </div>
+      <div class="w30 realisation" data-category="projet">
+        <a href="Projets/index-Projet2.html">
+          <img src="img/placeholdertest.jpg" alt="Projet 2">
+          <h3>Projet 2</h3>
+        </a>
+      </div>
+      <div class="w30 realisation" data-category="projet">
+        <a href="Projets/index-Projet3.html">
+          <img src="img/placeholdertest.jpg" alt="Projet 3">
+          <h3>Projet 3</h3>
+        </a>
+      </div>
+
+      <!-- Certification -->
+      <div class="w30 realisation" data-category="Certification">
+        <a href="#">
+          <img src="img/placeholdertest.jpg" alt="Certification 1">
+          <h3>Certification 1</h3>
+        </a>
+      </div>
+      <div class="w30 realisation" data-category="Certification">
+        <a href="#">
+          <img src="img/placeholdertest.jpg" alt="Certification 2">
+          <h3>Certification 2</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ===== VEILLE TECHNO ===== -->
+    <section class="section" id="s5">
+      <div class="boxed">
+        <h2>Veille technologique</h2>
+        <p>[Lien + texte]</p>
+
+        <h2>H2 titre</h2>
+        <p>[Lien + texte]</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section dark" id="s6">
+      <div class="boxed text-center">
+        <h2>Contactez-moi</h2>
+        <div class="flex wrap space-between gap30">
+          <div class="w30 contact">
+            <span class="material-icons icon">mail</span>
+            <span class="label">E-Mail</span>
+            <span class="value">sebastien.haas67410@gmail.com</span>
+          </div>
+          <div class="w30 contact">
+            <span class="material-icons icon">phone_enabled</span>
+            <span class="label">Téléphone</span>
+            <span class="value">0771068989</span>
+          </div>
+          <div class="w30 contact">
+            <span class="material-icons icon">link</span>
+            <span class="label">LinkedIn</span>
+            <span class="value">
+              <a href="https://www.linkedin.com/in/sebastien-haas-43731032a/" target="_blank">Mon profil LinkedIn</a>
+            </span>
+          </div>
         </div>
-
-        
-        <div class="section dark" id="s5">
-            <div class="boxed text-center">
-                <h2>Contactez-moi :</h2>
-                <div class="flex space-between">
-                    <div class="w32 contact">
-                        <span class="material-icons icon">mail</span>
-                        <span class="label">E-Mail</span>
-                        <span class="value">sebastien.haas67410@gmail.fr</span>
-                    </div>
-                    <div class="w32 contact">
-                        <span class="material-icons icon">phone_enabled</span>
-                        <span class="label">Téléphone</span>
-                        <span class="value">+33 0771068989</span>
-                    </div>
-                    <div class="w32 contact">
-                        <span class="material-icons icon">link</span>
-                        <span class="label">LinkedIn</span>
-                        <span class="value"><a href="https://www.linkedin.com/in/sebastien-haas-43731032a/">lien linkedin</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </body>
+      </div>
+    </section>
+    <script src="scripts/scripts.js"></script>
+  </body>
 </html>
